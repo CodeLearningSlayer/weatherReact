@@ -1,0 +1,35 @@
+.info{
+    display: flex;
+    align-items: center;
+    &__temperature{
+        font-size: 100px;
+        font-weight: 700;
+        color:#fff;
+        margin-right: 25px; 
+    }
+    &__inner-town{
+        font-size: 48px;
+        font-weight: 600;
+        color:#fff;
+    }
+    &__inner-date{
+        font-size: 40px;
+        color:#fff;
+        font-weight: 400;
+    }
+}
+
+.time-animation{
+    animation: blink 2s infinite; 
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    
+}

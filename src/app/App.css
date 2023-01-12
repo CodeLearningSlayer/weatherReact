@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  ul[class] {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  a {
+    text-decoration: none;
+  }
+
+.app{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Univa Nova, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.app__inner{
+  display: flex;
+  flex-grow:2;
+}
+
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius:0px 0 0 38px;
+    background-color: #61C6F1;
+    position: relative; 
+    width: 100%;
+    padding-top: 60px;
+
+  }
+
+.right-side{
+    border-radius: 0 0 38px 0;
+    backdrop-filter: blur(5px);
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    /* padding: 30px; */
+    background: linear-gradient(198.61deg, #0778A8 1.5%, #2CADE4 98.22%);
+}

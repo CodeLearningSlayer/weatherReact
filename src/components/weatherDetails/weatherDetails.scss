@@ -1,0 +1,23 @@
+@import "../../styles/vars";
+
+
+.details{
+    color:#fff;
+    @include overlays;
+    padding: 35px 0;
+    &__title{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    &__list-item{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__list-item + .details__list-item{
+        margin-top: 10px;
+    }
+}

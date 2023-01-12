@@ -1,0 +1,75 @@
+.topbar{
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    user-select: none;
+    height: 50px;
+    border-radius: 25px 25px 0px 0;
+    padding: 0px 23px;
+    background-color:#61C6F1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:2px solid #93D8FF;
+    &__buttons{
+        display: flex;
+    }
+    &__title{
+        color:#fff;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.12em;
+        align-self:center;
+    }
+}
+
+  .topBtn{
+    -webkit-app-region: no-drag;
+    width: 35px;
+    height: 100%;
+    border:none;
+    transition: all .3s;
+    background: transparent;
+    position: relative;
+  }
+  
+  .topBtn::after{
+    content: "";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .minimizeBtn::after{
+    width:15px;
+    height: 3px;
+    background-color: #fff;
+  }
+  
+  .maximizeBtn::after{
+    width:20px;
+    height:20px;
+    border: 3px solid #fff;
+  }
+  
+  .closeBtn::after{
+    width: 21px;
+    background-color: #fff;
+    height: 3px;
+    left:20%;
+    transform: rotate(45deg);
+  }
+  
+  .closeBtn::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 21px;
+    height: 3px;
+    transform: rotate(135deg);
+    left: 20%;
+  }
+  
+  .topBtn:hover{
+    background-color: #98E0FF;
+  }

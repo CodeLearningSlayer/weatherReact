@@ -1,0 +1,32 @@
+@import "../../styles/vars";
+
+
+.search{
+    @include overlays;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    &__input{
+        background-color: transparent;
+        border:none;
+        align-self: end;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        border-bottom: 1px solid #D1CBCB;
+    }
+    &__input::placeholder{
+        color: #fff;
+        font-weight: 300;
+
+    }
+    &__btn{
+        width: 79px;
+        height: 79px;
+        border-radius: 25px;
+        border:none;
+        cursor: pointer;
+        background: #61C6F1 url("../../assets/btn.svg") no-repeat center center;
+        
+    }
+}
