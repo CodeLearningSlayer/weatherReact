@@ -1,6 +1,7 @@
 .info{
     display: flex;
     align-items: center;
+    text-shadow: 8px 4px 4px rgb(0 0 0 / 50%);
     &__temperature{
         font-size: 100px;
         font-weight: 700;

@@ -51,7 +51,7 @@ ipc.handle("maximize-event", () => {
     win.maximize();
 })
 
-ipc.handle("unmaximize-event", () => {
+ipc.handle("unmaximize-event", () => { 
     win.restore();
     win.unmaximize();
 })

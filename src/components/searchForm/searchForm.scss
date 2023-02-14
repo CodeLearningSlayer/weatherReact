@@ -13,6 +13,8 @@
         align-self: end;
         padding-bottom: 5px;
         padding-right: 20px;
+        color:#fff;
+        font-size: 20px;
         border-bottom: 1px solid #D1CBCB;
     }
     &__input::placeholder{
@@ -26,7 +28,10 @@
         border-radius: 25px;
         border:none;
         cursor: pointer;
+        transition: all .1s;
         background: #61C6F1 url("../../assets/btn.svg") no-repeat center center;
-        
+        &:hover{
+            opacity: 75%;
+        }
     }
 }
